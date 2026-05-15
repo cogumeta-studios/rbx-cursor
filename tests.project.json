@@ -1,0 +1,19 @@
+{
+  "name": "Cursor Test-Runner",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "Cursor": {
+        "$path": "lib"
+      },
+      "DevPackages": {
+        "$path": "DevPackages"
+      }
+    },
+    "ServerScriptService": {
+      "Tests": {
+        "$path": "tests"
+      }
+    }
+  }
+}

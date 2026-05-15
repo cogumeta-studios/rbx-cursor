@@ -1,0 +1,13 @@
+[[root_redirects]]
+name = "Specium"
+target = "github.com_thecogumeta_rbx-specium@v1.2.2"
+scope = "dev-dependencies"
+
+[[package]]
+name = "thecogumeta_rbx-specium-v1.2.2-tuMlVf"
+source = "github.com:thecogumeta/rbx-specium"
+scope = "dev-dependencies"
+provider = "github.com"
+ref = "v1.2.2"
+folder = "github.com_thecogumeta_rbx-specium@v1.2.2"
+redirects = [ ]
