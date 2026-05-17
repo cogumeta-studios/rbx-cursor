@@ -22,7 +22,7 @@ function Cursor.new(): Cursor
 	return self
 end
 
-function Cursor.from(b: buffer, unbufferizable: { Instance }?): Cursor
+function Cursor.from(b: buffer, unbufferizable: { any }?): Cursor
 	local self: Cursor = setmetatable({}, Cursor) :: any
 	self._buffer = b
 	self._length = buffer.len(b)
@@ -44,7 +44,7 @@ function Cursor._grow(self: Cursor, bytes: number)
 	self._buffer = new
 end
 
-function Cursor.flush(self: Cursor): (buffer, { Instance }?)
+function Cursor.flush(self: Cursor): (buffer, { any }?)
 	local trimmed = buffer.create(self._offset)
 	buffer.copy(trimmed, 0, self._buffer, 0, self._offset)
 	local instances = if #self._unbufferizable > 0 then self._unbufferizable else nil
